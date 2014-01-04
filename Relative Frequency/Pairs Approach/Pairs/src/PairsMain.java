@@ -184,15 +184,7 @@ public class PairsMain {
 				    			counter.put(key.getNeighbor(), 1);
 			    			else
 			    				counter.put(key.getNeighbor(), counter.get(key.getNeighbor())+value.get());
-			    			/*//System.out.println(key.getWord()+" "+key.getNeighbor());
-			    			//System.out.println(value.get());
-			    			Text bigram = new Text();
-			    		    DoubleWritable relativeCount = new DoubleWritable();
-			    			bigram.set(key.getWord()+" "+key.getNeighbor());
-			    			double relfreq = (double) value.get() / tots.get(key.getWord());
-			    			//System.out.println(key.getWord()+" "+key.getNeighbor()+" "+relfreq);
-			    			relativeCount.set(relfreq);
-			    			context.write(bigram, relativeCount);*/
+			    			
 			    		}
 			    		
 			    	}
