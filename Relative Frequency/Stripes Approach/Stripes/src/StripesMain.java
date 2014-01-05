@@ -28,12 +28,12 @@ public class StripesMain {
         
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
             
-	    	String[] inp = value.toString().split(" ");
+	    	String[] inp = value.toString().split("\\W+");
     		
     		String u;
     		String v;
     		HashMap<String, HashMap<String, Integer>> fintots = new HashMap<String,HashMap<String, Integer>>();
-
+    		
     		for (int y = 0 ; y < inp.length-1 ; y++)
     		{
     			u=inp[y];
